@@ -28,7 +28,7 @@ if [ "$ACTION" = "run" ]; then
     echo "No NODENAME provided. Exiting"
     exit
   fi
-  ZOOKEEPER=$(ACTION=resolve java -jar /solr-libs/solr-utils.jar)
+  ZOOKEEPER=$(ACTION=resolve java -jar /opt/solr/odoko-solr-utils.jar)
   echo "Connecting to Solr via ${ZOOKEEPER}"
   echo "Starting Solr..."
   /opt/solr/bin/solr -c -z ${ZOOKEEPER} -f -s /solr -h ${NODENAME}
