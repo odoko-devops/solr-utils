@@ -25,13 +25,13 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <slf4j.version>1.7.6</slf4j.version>
-    <repo.name>solr-utils</repo.name>
+    <repo.name>odoko-solr-utils</repo.name>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.apache.solr</groupId>
-      <artifactId>solr-core</artifactId>
+      <artifactId>solr-solrj</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>

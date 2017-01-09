@@ -5,7 +5,7 @@ RUN mkdir /solr-libs /solr && \
     chown -R solr /solr
 
 COPY /target/solr-plugins-1.0.0.jar /solr-libs
-COPY /target/solr-utils.jar /opt/solr/
+COPY /target/odoko-solr-utils.jar /opt/solr/
 ADD /src/main/solr-config/ /opt/solr/configs/
 ADD run-service.sh /opt/solr/
 

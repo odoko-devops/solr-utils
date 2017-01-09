@@ -35,5 +35,5 @@ if [ "$ACTION" = "run" ]; then
 else
   echo "Connecting to Solr via ${ZOOKEEPER}"
   echo "Executing utility with ${ACTION}"
-  java -jar /solr-libs/solr-utils.jar
+  java -jar /opt/solr/odoko-solr-utils.jar
 fi
